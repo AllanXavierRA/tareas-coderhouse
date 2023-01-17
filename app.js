@@ -1,15 +1,17 @@
-
+const fs = require("fs");
 
 
 class ProductManager{
 
-    
+    path;
 
-    constructor(){
-        this.products = []
+    constructor(path){
+        this.path = path;
     }
 
-    getProducts(){        
+    async getProducts(){        
+        // Agregar validacion(try catch)
+        let products = await fs.promises.readFile(this.path, 'utf-8')
         return this.products;
     }
 
@@ -45,7 +47,7 @@ class ProductManager{
     }
 }
 
-const product = new ProductManager();
+const product = new ProductManager(product.json);
 
 product.getProducts()
 product.addProducts('producto prueba', 'este es un producto prueba', 200, 'abcd', 25);
