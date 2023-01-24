@@ -1,0 +1,23 @@
+{
+  "name": "03-tarea",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AllanXavierRA/tareas-coderhouse.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AllanXavierRA/tareas-coderhouse/issues"
+  },
+  "homepage": "https://github.com/AllanXavierRA/tareas-coderhouse#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
